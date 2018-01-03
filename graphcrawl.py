@@ -17,7 +17,7 @@ url = "{host}{path}&{params}".format(host=host, path=path, params=token)
 resp = urllib.urlopen(url).read()
 
 # convert the returned JSON string to a Python datatype 
-me = json.loads(resp)
+result = json.loads(resp)
 
 # display the result
-pprint.pprint(me)
+pprint.pprint(result)
